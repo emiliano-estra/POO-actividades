@@ -1,0 +1,14 @@
+C:\Users\Alumno\source\repos\respuesta4\punto3\bin\Debug\punto3.exe.config
+C:\Users\Alumno\source\repos\respuesta4\punto3\bin\Debug\punto3.exe
+C:\Users\Alumno\source\repos\respuesta4\punto3\bin\Debug\punto3.pdb
+C:\Users\Alumno\source\repos\respuesta4\punto3\obj\Debug\punto3.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\respuesta4\punto3\obj\Debug\punto3.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\respuesta4\punto3\obj\Debug\punto3.exe
+C:\Users\Alumno\source\repos\respuesta4\punto3\obj\Debug\punto3.pdb
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\bin\Debug\punto3.exe.config
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\bin\Debug\punto3.exe
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\bin\Debug\punto3.pdb
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\obj\Debug\punto3.csproj.AssemblyReference.cache
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\obj\Debug\punto3.csproj.CoreCompileInputs.cache
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\obj\Debug\punto3.exe
+C:\Users\laugt\Downloads\respuesta4-20260327T010322Z-3-001\respuesta4\punto3\obj\Debug\punto3.pdb
