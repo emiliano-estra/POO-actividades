@@ -34,7 +34,7 @@ namespace punto4
             {
                 Console.WriteLine("esta ordenado de menor a mayor");
             }
-            else { Console.Write("esta mal"); }
+            else { Console.Write("esta mal ordenado"); }
         }
         public bool orden_mayor_menor()
         {
