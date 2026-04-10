@@ -28,7 +28,7 @@ namespace punto3
         {
             int impuesto;
             string paga;
-            impuesto = calcular_superficie(sueldo);
+            impuesto = calcular_impuestos(sueldo);
             if (impuesto == 0)
             {
                 paga = "no debe pagar impuestos";
@@ -40,7 +40,7 @@ namespace punto3
             }
             
         }
-        public int calcular_superficie(int num)
+        public int calcular_impuestos(int num)
         {
             int debe;
             
