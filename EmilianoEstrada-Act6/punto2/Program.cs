@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace punto2
 {
-    internal class Program
+    internal class Cuadrado
     {
-        class Cuadrado
-        {
             private int lado;
             public void ingresar_numero()
             {
@@ -48,6 +46,5 @@ namespace punto2
                 cuadrado.imprimir();
                 Console.ReadKey();
             }
-        }
     }
 }
