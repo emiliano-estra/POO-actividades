@@ -50,6 +50,7 @@ namespace punto1
             vectorn ventor=new vectorn();
             ventor.cargar();
             ventor.imprimir();
+            Console.ReadKey();
         }
     }
 }
