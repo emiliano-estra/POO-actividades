@@ -30,8 +30,18 @@ namespace punto4
             int baja = 0, alta = 0;
             alta = calcular_mayor();
             baja = calcular_menor();
-            Console.WriteLine("el docente con mejor nota es: "+alta);
-            Console.WriteLine("el docente con el peor nota es: "+baja);
+            Console.WriteLine("la nota mas alta es "+alta+", los docente que lo tiene son : ");
+            for(int i=0;i<docente.Length;i++){
+            if(alta==nota[i]){
+                Console.WriteLine(docente[i]);
+            }
+            }
+            Console.WriteLine("la nota mas baja es "+baja+", los docente que lo tiene son : ");
+            for(int i=0;i<docente.Length;i++){
+                 if(baja==nota[i]){
+                Console.WriteLine(docente[i]);
+            }
+            }
             ordenar();
             Console.WriteLine("los docentes que aprobaron son: ");
             for (int i = 0; i < 5; i++) {
