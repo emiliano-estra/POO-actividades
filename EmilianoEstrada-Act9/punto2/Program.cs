@@ -31,10 +31,10 @@ namespace punto2
             int aux;
             string aux_nombre;
             for (int i = 0; i < vendedor.Length; i++) {
-                for (int j = 0; j < vendedor.Length; j++) {
+                for (int j = 0; j < vendedor.Length-i; j++) {
                     if (j != vendedor.Length - 1)
                     {
-                        if (ventatotal[i] < ventatotal[i+1])
+                        if (ventatotal[j] < ventatotal[j+1])
                         {
                             aux = ventatotal[j];
                             ventatotal[j] = ventatotal[j + 1];
@@ -49,12 +49,27 @@ namespace punto2
         }
         public void imprimir()
         {
+            int cant=0;
             Console.Write("la lista de vendedores de mayor a menor:");
            for (int i = 0;i < vendedor.Length; i++)
             {
                 Console.WriteLine(vendedor[i]+" " + ventatotal[i]);
+                if (ventatotal[i] == ventatotal[4])
+                {
+                    cant++;
+                }
             }
-            Console.WriteLine("el que vendio menos es:" + vendedor[4]+" con " + ventatotal[4]);
+            if (cant == 1)
+            {
+                Console.WriteLine("el que vendio menos es: " + vendedor[4] + " con " + ventatotal[4]);
+            }
+            else {
+                Console.WriteLine("los que vendieron menos son: ");
+                for (int i = 4; i > ventatotal.Length - cant - 1; i--)
+                {
+                    Console.WriteLine(vendedor[i]+" con " + ventatotal[4]);
+                }
+            }
         }
         static void Main(string[] args)
         {

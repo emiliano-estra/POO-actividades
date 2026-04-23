@@ -5,3 +5,10 @@ C:\Users\Alumno\source\repos\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.csproj
 C:\Users\Alumno\source\repos\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\source\repos\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.exe
 C:\Users\Alumno\source\repos\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.pdb
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\bin\Debug\punto2.exe.config
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\bin\Debug\punto2.exe
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\bin\Debug\punto2.pdb
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.csproj.AssemblyReference.cache
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.csproj.CoreCompileInputs.cache
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.exe
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act9\punto2\obj\Debug\punto2.pdb
