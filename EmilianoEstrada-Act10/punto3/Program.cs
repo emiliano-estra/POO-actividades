@@ -37,8 +37,13 @@ namespace punto3
             {
                 for (int j = 0; j < columna; j++)
                 {
+                    if(i==0||(i==fila-1&& j==columna-1)){
                     if (i == j)
                     {
+                        Console.Write(mat[i, j] + " ");
+                    }
+                    }
+                    if((i==0&&j==columna-1)||(i==fila-1&&j==0)){
                         Console.Write(mat[i, j] + " ");
                     }
                 }
