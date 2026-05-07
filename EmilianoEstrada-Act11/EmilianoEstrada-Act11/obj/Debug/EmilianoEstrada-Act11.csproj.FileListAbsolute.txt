@@ -1,0 +1,7 @@
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\bin\Debug\EmilianoEstrada-Act11.exe.config
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\bin\Debug\EmilianoEstrada-Act11.exe
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\bin\Debug\EmilianoEstrada-Act11.pdb
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\obj\Debug\EmilianoEstrada-Act11.csproj.AssemblyReference.cache
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\obj\Debug\EmilianoEstrada-Act11.csproj.CoreCompileInputs.cache
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\obj\Debug\EmilianoEstrada-Act11.exe
+C:\Users\alumno\source\repos\EmilianoEstrada-Act11\EmilianoEstrada-Act11\obj\Debug\EmilianoEstrada-Act11.pdb
