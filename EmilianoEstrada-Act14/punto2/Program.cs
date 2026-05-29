@@ -56,7 +56,7 @@ namespace punto2
         public void imprimir()
         {
             for (int i = 0; i < 4; i++) {
-                Console.WriteLine(pasa[i].nombrepasajero() + pasa[i].DNIpasajero() + pasa[i].peso());
+                Console.WriteLine("nombre pasajero:"+pasa[i].nombrepasajero() +". DNI pasajero:"+ pasa[i].DNIpasajero() +". Peso del equipaje del pasajero:"+ pasa[i].peso());
             }
         }
         public void pesototal()

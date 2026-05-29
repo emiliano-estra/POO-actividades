@@ -54,6 +54,7 @@ namespace punto1
         }
         public void imprimirtipo()
         {
+            Console.WriteLine("en la cabina "+codigo);
             auto1.Imprimir();
             auto2.Imprimir();
             auto3.Imprimir();
