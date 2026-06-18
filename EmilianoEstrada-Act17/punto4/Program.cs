@@ -10,7 +10,11 @@ namespace punto4
     {
         protected string tipomaterial;
         public Material() {
-            Console.WriteLine("constructor de la clase Material ejecutado");
+            Console.WriteLine("constructor de la clase Material ejecutado ");
+        }
+        public void Funcion1()
+        {
+            Console.WriteLine("su material es "+tipomaterial);
         }
         public string Tipomaterial
         {
@@ -28,8 +32,13 @@ namespace punto4
     class Herramienta : Material
     {
         protected string funcionprincipal;
-        public Herramienta() {
+        public Herramienta()
+        {
             Console.WriteLine("constructor de la clase Herramienta ejecutado");
+        }
+        public void Funcion2()
+        {
+            Console.WriteLine("su funcion es de "+funcionprincipal);
         }
         public string Funcionprincipal
         {
@@ -47,7 +56,11 @@ namespace punto4
         protected double pesogramos;
         public Martillo()
         {
-            Console.WriteLine("constructor de la clase Martillo ejecutado");
+            Console.WriteLine("constructor de la clase Martillo ejecutado ");
+        }
+        public void Funcion3()
+        {
+            Console.WriteLine("su peso es de "+pesogramos);
         }
         public double Pessogramos
         {
@@ -82,6 +95,9 @@ namespace punto4
             martillo.Tipomaterial = "acero";
             martillo.Funcionprincipal = "carpinteria";
             martillo.Pessogramos= 2500.6;
+            martillo.Funcion1();
+            martillo.Funcion2();
+            martillo.Funcion3();
             Console.ReadKey();
         }
     }

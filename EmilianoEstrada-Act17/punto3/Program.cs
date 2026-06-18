@@ -44,13 +44,49 @@ namespace punto3
         protected float tamanopantalla;
         public Notebook()
         {
-
+            string linea;
+            Console.WriteLine("ingrese el tamaño de la pantalla: ");
+            linea = Console.ReadLine();
+            Tamanopantalla = float.Parse(linea);
+        }
+        public float Tamanopantalla
+        {
+            set
+            {
+                tamanopantalla=value;
+            }
+            get
+            {
+                return tamanopantalla;
+            }
+        }
+        public void Mostrarnotebook() {
+        Console.WriteLine("la marca de la notebook es "+marca+"\n su memoria RAM es de "+memoriaram+"\n su tamaño de pantalla es de "+tamanopantalla);
         }
     }
     class Escritorio : Computadora
     {
+        protected int potenciafuente;
         public Escritorio() {
-        
+            string linea;
+            Console.WriteLine("ingrese la potencia de la fuente: ");
+            linea=Console.ReadLine();
+            Potenciafuente=int.Parse(linea);
+        }
+        public int Potenciafuente
+        {
+            set
+            {
+                potenciafuente=value;
+            }
+            get
+            {
+                return potenciafuente;
+            }
+        }
+        public void Mostrarescritorio()
+        {
+            Console.WriteLine("la marca de la computadora de escritorio es " + marca + "\n su memoria RAM es de " + memoriaram + "\n su potencia de la fuente es de " + potenciafuente);
         }
     }
     class Prueba
@@ -65,6 +101,11 @@ namespace punto3
         tanto los atributos específicos como los de la clase base, transfiriendo estos últimos a la
         clase Computadora mediante el uso explícito de la palabra clave base. Instanciar un objeto
         de cada clase derivada en el Main y mostrar la totalidad de sus datos por consola.*/
+            Notebook notebook = new Notebook();
+            notebook.Mostrarnotebook();
+            Escritorio escritorio = new Escritorio();
+            escritorio.Mostrarescritorio();
+            Console.ReadKey();
         }
     }
 }
