@@ -9,14 +9,7 @@ namespace punto4
     internal class Material
     {
         protected string tipomaterial;
-        public Material() {
-            Console.WriteLine("constructor de la clase Material ejecutado ");
-        }
-        public void Funcion1()
-        {
-            Console.WriteLine("su material es "+tipomaterial);
-        }
-        public string Tipomaterial
+         public string Tipomaterial
         {
             set
             {
@@ -27,20 +20,18 @@ namespace punto4
                 return tipomaterial;
             }
         }
-       
+        public Material() {
+            Console.WriteLine("constructor de la clase Material ejecutado ");
+        }
+        public void Funcion1()
+        {
+            Console.WriteLine("su material es "+tipomaterial);
+        }
     }
     class Herramienta : Material
     {
         protected string funcionprincipal;
-        public Herramienta()
-        {
-            Console.WriteLine("constructor de la clase Herramienta ejecutado");
-        }
-        public void Funcion2()
-        {
-            Console.WriteLine("su funcion es de "+funcionprincipal);
-        }
-        public string Funcionprincipal
+         public string Funcionprincipal
         {
             set
             {
@@ -51,17 +42,18 @@ namespace punto4
                 return funcionprincipal;
             }
         }
+        public Herramienta()
+        {
+            Console.WriteLine("constructor de la clase Herramienta ejecutado");
+        }
+        public void Funcion2()
+        {
+            Console.WriteLine("su funcion es de "+funcionprincipal);
+        }
+       
     }
     class Martillo : Herramienta {
         protected double pesogramos;
-        public Martillo()
-        {
-            Console.WriteLine("constructor de la clase Martillo ejecutado ");
-        }
-        public void Funcion3()
-        {
-            Console.WriteLine("su peso es de "+pesogramos);
-        }
         public double Pessogramos
         {
             set
@@ -73,6 +65,15 @@ namespace punto4
                 return pesogramos;
             }
         }
+        public Martillo()
+        {
+            Console.WriteLine("constructor de la clase Martillo ejecutado ");
+        }
+        public void Funcion3()
+        {
+            Console.WriteLine("su peso es de "+pesogramos);
+        }
+        
     }
     class Prueba
     {
@@ -91,13 +92,13 @@ namespace punto4
         En el método Main, crear únicamente un objeto de la clase final Martillo pasándole todos los
         parámetros requeridos. Observar y verificar en la consola el orden secuencial de ejecución
         en cadena de los constructores (desde la raíz hasta la clase derivada).*/
-            Martillo martillo = new Martillo();
-            martillo.Tipomaterial = "acero";
-            martillo.Funcionprincipal = "carpinteria";
-            martillo.Pessogramos= 2500.6;
-            martillo.Funcion1();
-            martillo.Funcion2();
-            martillo.Funcion3();
+            Martillo mar = new Martillo();
+            mar.Tipomaterial = "acero";
+            mar.Funcionprincipal = "carpinteria";
+            mar.Pessogramos= 2500.6;
+            mar.Funcion1();
+            mar.Funcion2();
+            mar.Funcion3();
             Console.ReadKey();
         }
     }
