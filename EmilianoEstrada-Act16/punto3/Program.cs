@@ -38,17 +38,7 @@ namespace punto3
     {
         private int cantidadpuertas;
         private Vehiculo base1;
-        public Auto()
-        {
-            base1 = new Vehiculo();
-            Console.WriteLine("ingrese la marca del auto:");
-            base1.Marca = Console.ReadLine();
-            Console.WriteLine("ingrese la velocidad maxima del auto: ");
-            base1.Velocidadmax = int.Parse(Console.ReadLine());
-            Console.WriteLine("ingrese la cantidad de puertas:");
-            Cantidadpuertas = int.Parse(Console.ReadLine());
-        }
-        public int Cantidadpuertas
+         public int Cantidadpuertas
         {
             set
             {
@@ -60,6 +50,17 @@ namespace punto3
             }
 
         }
+        public Auto()
+        {
+            base1 = new Vehiculo();
+            Console.WriteLine("ingrese la marca del auto:");
+            base1.Marca = Console.ReadLine();
+            Console.WriteLine("ingrese la velocidad maxima del auto: ");
+            base1.Velocidadmax = int.Parse(Console.ReadLine());
+            Console.WriteLine("ingrese la cantidad de puertas:");
+            Cantidadpuertas = int.Parse(Console.ReadLine());
+        }
+       
         public void Imprimir()
         {
             Console.WriteLine("las caracterioticas del auto: " + base1.Marca + ", velocidad " + base1.Velocidadmax + " y cantidad de puertas " + Cantidadpuertas);
@@ -69,15 +70,6 @@ namespace punto3
         {
             private int cilindrada;
             private Vehiculo base2;
-            public Moto() { 
-            base2 = new Vehiculo();
-                Console.WriteLine("ingrese la marca de la moto:");
-                base2.Marca = Console.ReadLine();
-                Console.WriteLine("ingrese la velocidad maxima de la moto: ");
-                base2.Velocidadmax = int.Parse(Console.ReadLine());
-                Console.WriteLine("ingrese la cantidad de cilindradas: ");
-                Cilindrada=int.Parse(Console.ReadLine());
-            }
             public int Cilindrada
             {
                 set
@@ -89,6 +81,16 @@ namespace punto3
                     return cilindrada;
                 }
             }
+            public Moto() { 
+            base2 = new Vehiculo();
+                Console.WriteLine("ingrese la marca de la moto:");
+                base2.Marca = Console.ReadLine();
+                Console.WriteLine("ingrese la velocidad maxima de la moto: ");
+                base2.Velocidadmax = int.Parse(Console.ReadLine());
+                Console.WriteLine("ingrese la cantidad de cilindradas: ");
+                Cilindrada=int.Parse(Console.ReadLine());
+            }
+            
             public void Imprimir()
             {
                 Console.WriteLine("las caracterioticas de la moto: "+base2.Marca+", velocidad"+base2.Velocidadmax+" y cilindrada "+Cilindrada);
@@ -104,10 +106,10 @@ namespace punto3
             mediante la palabra clave base, y un atributo propio (cantidadPuertas en
             Auto, cilindrada en Moto).
             Crear un objeto de cada clase y mostrar todos sus datos por consola.*/
-            Auto auto = new Auto();
-            auto.Imprimir();
-            Moto moto = new Moto();
-            moto.Imprimir(); 
+            Auto a = new Auto();
+            a.Imprimir();
+            Moto m = new Moto();
+            m.Imprimir(); 
             }
         }
     }
