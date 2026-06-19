@@ -152,9 +152,9 @@ namespace punto2
         películas ordenadas de mayor a menor en base a su duración. Además, el método debe
         informar el título de la película con mejor calificación y cuál es la película más corta del
         catálogo.*/
-            Catalogo catalogo = new Catalogo();
-            catalogo.Mejor();
-            catalogo.Corta();
+            Catalogo cata = new Catalogo();
+            cata.Mejor();
+            cata.Corta();
             Console.ReadKey();
 
         }
