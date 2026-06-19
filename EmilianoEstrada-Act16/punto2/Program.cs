@@ -10,37 +10,6 @@ namespace punto2
     {
         private string nombre;
         private int precio,stock;
-        public Producto()
-        {
-            int numero = 0;
-            Console.Write("ingrese el nombre del producto: ");
-            Nombre = Console.ReadLine();
-            for (int i = -1; i < 1; i--)
-            {
-                Console.Write("ingrese el precio del producto: ");
-                numero = int.Parse(Console.ReadLine());
-                if (numero > 0)
-                {
-                    Precio = numero;
-                    i = 2;
-                }
-            }
-
-
-            for (int i = -1; i < 1; i--)
-            {
-                Console.Write("ingrese cuanto producto tiene : ");
-                numero = int.Parse(Console.ReadLine());
-                if (numero >= 0)
-                {
-                    Stock = numero;
-                    i = 2;
-                }
-            }
-
-
-
-        }
         public string Nombre
         {
             set
@@ -74,6 +43,34 @@ namespace punto2
                 return stock;
             }
         }
+        public Producto()
+        {
+            int numero = 0;
+            Console.Write("ingrese el nombre del producto: ");
+            Nombre = Console.ReadLine();
+            for (int i = -1; i < 1; i--)
+            {
+                Console.Write("ingrese el precio del producto: ");
+                numero = int.Parse(Console.ReadLine());
+                if (numero > 0)
+                {
+                    Precio = numero;
+                    i = 2;
+                }
+            }
+
+
+            for (int i = -1; i < 1; i--)
+            {
+                Console.Write("ingrese cuanto producto tiene : ");
+                numero = int.Parse(Console.ReadLine());
+                if (numero >= 0)
+                {
+                    Stock = numero;
+                    i = 2;
+                }
+            }
+        }   
     }
     class Invetario
     {
@@ -82,8 +79,6 @@ namespace punto2
             produ1 = new Producto();
             produ2 = new Producto();
             produ3 = new Producto();
-            
-
         }
         public void Menormayor()
         {
@@ -150,8 +145,8 @@ namespace punto2
         método para mostrar todos los productos ordenados de menor a mayor en
         base al precio, además, mostrar el producto más caro y más barato del
         inventario.*/
-            Invetario invetario = new Invetario();
-            invetario.Menormayor();
+            Invetario i = new Invetario();
+            i.Menormayor();
             Console.ReadKey();
         }
     }
