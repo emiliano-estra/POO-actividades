@@ -10,7 +10,6 @@ namespace punto3
     {
         protected string marca;
         protected int velocidadmax;
-        
         public string Marca
         {
             set

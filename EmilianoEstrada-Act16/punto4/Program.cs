@@ -13,24 +13,24 @@ namespace punto4
         {
             set
             {
-                especie=value;
+                especie = value;
             }
-            get 
-            { 
+            get
+            {
                 return especie;
             }
         }
-        public Animal()
+        public Animal(string es,string ti,string no) 
         {
-            Especie = "labrador";
-            Console.WriteLine(" esta es la clase animales con la especie: "+especie);
+            Especie = es;
+            Console.WriteLine(" esta es la clase animales con la especie: "+Especie);
         }
-        
+       
     }
     class Mamifero : Animal 
     {
         protected string tipoalimentacion;
-         public string Tipoalimentacion
+        public string Tipoalimentacion
         {
             set
             {
@@ -41,17 +41,17 @@ namespace punto4
                 return tipoalimentacion;
             }
         }
-        public Mamifero()
+        public Mamifero(string es,string ti,string no) : base(es,ti,no)
         {
-            Tipoalimentacion = "carnivoros";
-            Console.WriteLine("esta es la clase tipoalimentacion con una alimentacion: " + tipoalimentacion);
+            Tipoalimentacion = ti;
+            Console.WriteLine("esta es la clase tipoalimentacion con una alimentacion: " + Tipoalimentacion);
         }
-       
+        
     }
     class Perro : Mamifero
     {
         protected string nombre;
-         public string Nombre
+        public string Nombre
         {
             set
             {
@@ -62,12 +62,12 @@ namespace punto4
                 return nombre;
             }
         }
-        public Perro()
+        public Perro(string es,string ti,string no):  base(es,ti,no)
         {
-            Nombre = "chompi";
-            Console.WriteLine("esta es la clase perro con el nombre del perro: " + nombre);
+            Nombre = no;
+            Console.WriteLine("esta es la clase perro con el nombre del perro: " + Nombre);
         }
-       
+        
     }
     class Prueba
     {
@@ -82,7 +82,7 @@ namespace punto4
         asignados previamente
         Crear un objeto de la clase Perro y verificar la ejecución en cadena de los
         constructores.*/
-                Perro perro = new Perro();
+                Perro perro = new Perro("canino","carnivoros","chompi");
                 Console.ReadKey();
         }
     }
