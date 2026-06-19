@@ -10,12 +10,6 @@ namespace punto3
     {
         protected string marca;
         protected int memoriaram;
-        public Computadora() {
-            Console.WriteLine("ingrese la marca de la computadora: ");
-            Marca = Console.ReadLine();
-            Console.WriteLine("ingrese cuanta memoria ram tiene la computadora: ");
-            memoriaram=int.Parse(Console.ReadLine());
-        }
         public string Marca
         {
             set
@@ -38,18 +32,17 @@ namespace punto3
                 return memoriaram;
             }
         }
+        public Computadora() {
+            Console.WriteLine("ingrese la marca de la computadora: ");
+            Marca = Console.ReadLine();
+            Console.WriteLine("ingrese cuanta memoria ram tiene la computadora: ");
+            memoriaram=int.Parse(Console.ReadLine());
+        }
     }
     class Notebook :Computadora
     {
         protected float tamanopantalla;
-        public Notebook()
-        {
-            string linea;
-            Console.WriteLine("ingrese el tamaño de la pantalla: ");
-            linea = Console.ReadLine();
-            Tamanopantalla = float.Parse(linea);
-        }
-        public float Tamanopantalla
+         public float Tamanopantalla
         {
             set
             {
@@ -60,6 +53,14 @@ namespace punto3
                 return tamanopantalla;
             }
         }
+        public Notebook()
+        {
+            string linea;
+            Console.WriteLine("ingrese el tamaño de la pantalla: ");
+            linea = Console.ReadLine();
+            Tamanopantalla = float.Parse(linea);
+        }
+       
         public void Mostrarnotebook() {
         Console.WriteLine("la marca de la notebook es "+marca+"\n su memoria RAM es de "+memoriaram+"\n su tamaño de pantalla es de "+tamanopantalla);
         }
@@ -67,13 +68,7 @@ namespace punto3
     class Escritorio : Computadora
     {
         protected int potenciafuente;
-        public Escritorio() {
-            string linea;
-            Console.WriteLine("ingrese la potencia de la fuente: ");
-            linea=Console.ReadLine();
-            Potenciafuente=int.Parse(linea);
-        }
-        public int Potenciafuente
+         public int Potenciafuente
         {
             set
             {
@@ -84,6 +79,13 @@ namespace punto3
                 return potenciafuente;
             }
         }
+        public Escritorio() {
+            string linea;
+            Console.WriteLine("ingrese la potencia de la fuente: ");
+            linea=Console.ReadLine();
+            Potenciafuente=int.Parse(linea);
+        }
+       
         public void Mostrarescritorio()
         {
             Console.WriteLine("la marca de la computadora de escritorio es " + marca + "\n su memoria RAM es de " + memoriaram + "\n su potencia de la fuente es de " + potenciafuente);
@@ -101,10 +103,10 @@ namespace punto3
         tanto los atributos específicos como los de la clase base, transfiriendo estos últimos a la
         clase Computadora mediante el uso explícito de la palabra clave base. Instanciar un objeto
         de cada clase derivada en el Main y mostrar la totalidad de sus datos por consola.*/
-            Notebook notebook = new Notebook();
-            notebook.Mostrarnotebook();
-            Escritorio escritorio = new Escritorio();
-            escritorio.Mostrarescritorio();
+            Notebook note = new Notebook();
+            note.Mostrarnotebook();
+            Escritorio escri = new Escritorio();
+            escri.Mostrarescritorio();
             Console.ReadKey();
         }
     }
