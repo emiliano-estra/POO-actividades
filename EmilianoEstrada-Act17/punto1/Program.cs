@@ -75,12 +75,12 @@ namespace punto1
             persona.Nombre = "ignacio";
             persona.DNI = 48909120;
             persona.Imprimir();
-            Profesor profesor = new Profesor();
-            profesor.Nombre = "santino";
-            profesor.DNI = 48505967;
-            profesor.Especialidad = "especialista en espalda";
-            profesor.Imprimir();
-            profesor.ImprimirP();
+            Profesor prof = new Profesor();
+            prof.Nombre = "santino";
+            prof.DNI = 48505967;
+            prof.Especialidad = "especialista en espalda";
+            prof.Imprimir();
+            prof.ImprimirP();
             Console.ReadKey();
         }
     }
