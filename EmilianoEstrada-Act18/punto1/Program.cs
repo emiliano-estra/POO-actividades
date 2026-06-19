@@ -10,16 +10,7 @@ namespace punto1
     {
         private string codigoidentificador;
         private double generacionkwh;
-        public void carga()
-        {
-            string linea;
-            Console.WriteLine("ingrese el codigo de identificador: ");
-            Codigoidentificador = Console.ReadLine();
-            Console.WriteLine("ingrese la generacion de kWh: ");
-            linea = Console.ReadLine();
-            Generacionkwh=double.Parse(linea);
-        }
-        public string Codigoidentificador
+         public string Codigoidentificador
         {
             set
             {
@@ -48,6 +39,15 @@ namespace punto1
                 return generacionkwh;
             }
         }
+        public void carga()
+        {
+            string linea;
+            Console.WriteLine("ingrese el codigo de identificador: ");
+            Codigoidentificador = Console.ReadLine();
+            Console.WriteLine("ingrese la generacion de kWh: ");
+            linea = Console.ReadLine();
+            Generacionkwh=double.Parse(linea);
+        }
         public void imprimir()
         {
             Console.WriteLine("su generacion de kWh es de "+generacionkwh+" siendo el codigo de identificador "+codigoidentificador);
@@ -57,6 +57,17 @@ namespace punto1
     class Panelsolar : Dispositivoenergia
     {
         private double areametros;
+         public double Areametros
+        {
+            set
+            {
+                    areametros = value;
+            }
+            get
+            {
+                return areametros;
+            }
+        }
         public Panelsolar(){
             string linea;
             bool t = true;
@@ -80,17 +91,7 @@ namespace punto1
                 Areametros = double.Parse(linea);
             }
         }
-        public double Areametros
-        {
-            set
-            {
-                    areametros = value;
-            }
-            get
-            {
-                return areametros;
-            }
-        }
+       
         public void imprimirp()
         {
             Console.WriteLine("su generacion de kWh es de "+Generacionkwh+" siendo el codigo de identificador "+Codigoidentificador+" estando en "+areametros+" metros");
@@ -116,9 +117,9 @@ namespace punto1
             Dispositivoenergia d = new Dispositivoenergia();
             d.carga();
             d.imprimir();
-            Panelsolar panelsolar = new Panelsolar();
-            panelsolar.carga();
-            panelsolar.imprimirp();
+            Panelsolar pane = new Panelsolar();
+            pane.carga();
+            pane.imprimirp();
             Console.ReadKey();
         }
     }
