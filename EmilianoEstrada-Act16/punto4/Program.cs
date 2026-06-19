@@ -20,9 +20,9 @@ namespace punto4
                 return especie;
             }
         }
-        public Animal(string es,string ti,string no) 
+        public Animal(string especienu,string tipoalimentacionnu,string nombrenu) 
         {
-            Especie = es;
+            Especie = especienu;
             Console.WriteLine(" esta es la clase animales con la especie: "+Especie);
         }
        
@@ -41,9 +41,9 @@ namespace punto4
                 return tipoalimentacion;
             }
         }
-        public Mamifero(string es,string ti,string no) : base(es,ti,no)
+        public Mamifero(string especienu,string tipoalimentacionnu,string nombrenu) : base(especienu,tipoalimentacionnu,nombrenu)
         {
-            Tipoalimentacion = ti;
+            Tipoalimentacion = tipoalimentacionnu;
             Console.WriteLine("esta es la clase tipoalimentacion con una alimentacion: " + Tipoalimentacion);
         }
         
@@ -62,9 +62,9 @@ namespace punto4
                 return nombre;
             }
         }
-        public Perro(string es,string ti,string no):  base(es,ti,no)
+        public Perro(string especienu,string tipoalimentacionnu,string nombrenu):  base(especienu,tipoalimentacionnu,nombrenu)
         {
-            Nombre = no;
+            Nombre = nombrenu;
             Console.WriteLine("esta es la clase perro con el nombre del perro: " + Nombre);
         }
         
@@ -82,7 +82,7 @@ namespace punto4
         asignados previamente
         Crear un objeto de la clase Perro y verificar la ejecución en cadena de los
         constructores.*/
-                Perro perro = new Perro("canino","carnivoros","chompi");
+                Perro p = new Perro("canino","carnivoros","chompi");
                 Console.ReadKey();
         }
     }
