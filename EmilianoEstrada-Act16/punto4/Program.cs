@@ -9,11 +9,6 @@ namespace punto4
     internal class Animal
     {
         protected string especie;
-        public Animal()
-        {
-            Especie = "labrador";
-            Console.WriteLine(" esta es la clase animales con la especie: "+especie);
-        }
         public string Especie
         {
             set
@@ -25,16 +20,17 @@ namespace punto4
                 return especie;
             }
         }
+        public Animal()
+        {
+            Especie = "labrador";
+            Console.WriteLine(" esta es la clase animales con la especie: "+especie);
+        }
+        
     }
     class Mamifero : Animal 
     {
         protected string tipoalimentacion;
-        public Mamifero()
-        {
-            Tipoalimentacion = "carnivoros";
-            Console.WriteLine("esta es la clase tipoalimentacion con una alimentacion: " + tipoalimentacion);
-        }
-        public string Tipoalimentacion
+         public string Tipoalimentacion
         {
             set
             {
@@ -45,16 +41,17 @@ namespace punto4
                 return tipoalimentacion;
             }
         }
+        public Mamifero()
+        {
+            Tipoalimentacion = "carnivoros";
+            Console.WriteLine("esta es la clase tipoalimentacion con una alimentacion: " + tipoalimentacion);
+        }
+       
     }
     class Perro : Mamifero
     {
         protected string nombre;
-        public Perro()
-        {
-            Nombre = "chompi";
-            Console.WriteLine("esta es la clase perro con el nombre del perro: " + nombre);
-        }
-        public string Nombre
+         public string Nombre
         {
             set
             {
@@ -65,6 +62,12 @@ namespace punto4
                 return nombre;
             }
         }
+        public Perro()
+        {
+            Nombre = "chompi";
+            Console.WriteLine("esta es la clase perro con el nombre del perro: " + nombre);
+        }
+       
     }
     class Prueba
     {
