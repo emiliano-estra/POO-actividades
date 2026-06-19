@@ -6,9 +6,90 @@ using System.Threading.Tasks;
 
 namespace punto3
 {
-    internal class Program
+    internal class Sondaexploradora
     {
-        
+        protected string modelo;
+        protected int automiaminutus;
+        public Sondaexploradora(){
+            string linea;
+            Console.WriteLine("ingrese el modelo de la sonda: ");
+            Modelo = Console.ReadLine();
+            Console.WriteLine("ingrese la autonomia minutos de la sonda: ");
+            linea = Console.ReadLine();
+            Automiaminutus=int.Parse(linea);
+        }
+        public string Modelo
+        {
+            set
+            {
+                modelo = value;
+            }
+            get
+            {
+                return modelo;
+            }
+        }
+        public int Automiaminutus
+        {
+            set
+            {
+                automiaminutus = value;
+            }
+            get
+            {
+                return automiaminutus;
+            }
+        }
+    }
+    class Sondasubmarina : Sondaexploradora
+    {
+        protected int presionmaximaatm;
+        public Sondasubmarina(){
+            string linea;
+            Console.WriteLine("ingese la presion maxima de la sonda submarina: ");
+            linea= Console.ReadLine();
+            Presionmaximaatm=int.Parse(linea);
+        }
+        public int Presionmaximaatm
+        {
+            set
+            {
+                presionmaximaatm = value;
+            }
+            get
+            {
+                return presionmaximaatm;
+            }
+        }
+        public void imprimirs()
+        {
+            Console.WriteLine("modelo de la sonda sumamarina " + Modelo + " con una autonimina de " + Automiaminutus + " con un limite de " + Presionmaximaatm+" atmosferas");
+        }
+    }
+    class Roverterrestre : Sondaexploradora
+    {
+        protected int cantidadruedas;
+        public Roverterrestre() {
+            string linea;
+            Console.WriteLine("ingrese cuantas cantidad de ruedas tiene el rover: ");
+            linea = Console.ReadLine();
+            Cantidadruedas=int.Parse(linea);
+        } 
+        public int Cantidadruedas
+        {
+            set
+            {
+                cantidadruedas = value;
+            }
+            get
+            {
+                return cantidadruedas;
+            }
+        }
+        public void imprimirr()
+        {
+            Console.WriteLine("modelo del rover "+Modelo+" con una autonimina de "+Automiaminutus+" teniendo una cantidad de ruedas "+Cantidadruedas);
+        }
     }
     class Prueba
     {
@@ -25,6 +106,11 @@ namespace punto3
         clase SondaExploradora mediante el uso explícito de la palabra clave base.
         En el método Main, instanciar un objeto de cada clase derivada y mostrar la totalidad de sus
         parámetros unificados por consola.*/
+            Sondasubmarina sondasubmarina = new Sondasubmarina();
+            sondasubmarina.imprimirs();
+            Roverterrestre roverterrestre = new Roverterrestre();
+            roverterrestre.imprimirr();
+            Console.ReadKey();
         }
     }
 }
