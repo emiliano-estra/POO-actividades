@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace punto2
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {/*Crear una clase parcial Libro.
@@ -15,6 +15,9 @@ namespace punto2
         En el segundo archivo, agregar un método Resumen() que muestre el título, autor y
         si el libro es corto (menos de 100 páginas) o largo.
         Desde la clase principal, cargar 2 libros y mostrar cuál es el más extenso.*/
+            Libro l = new Libro();
+            l.Resumen();
+            Console.ReadKey();
         }
     }
 }

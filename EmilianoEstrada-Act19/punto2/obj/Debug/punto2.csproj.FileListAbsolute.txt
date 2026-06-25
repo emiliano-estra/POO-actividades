@@ -1,0 +1,2 @@
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act19\punto2\obj\Debug\punto2.csproj.AssemblyReference.cache
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act19\punto2\obj\Debug\punto2.csproj.CoreCompileInputs.cache

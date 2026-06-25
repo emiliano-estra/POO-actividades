@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{66A80FC1-6CB3-4646-B229-6B08B84125DC}</ProjectGuid>
+    <ProjectGuid>{4717408F-45AC-4F4E-B2E2-B712B1182865}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>punto2</RootNamespace>
     <AssemblyName>punto2</AssemblyName>
@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="Libro1.cs" />
+	  
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
