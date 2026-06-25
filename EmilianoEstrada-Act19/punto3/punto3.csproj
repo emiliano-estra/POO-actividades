@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4717408F-45AC-4F4E-B2E2-B712B1182865}</ProjectGuid>
+    <ProjectGuid>{D2EC334F-B913-44EE-B092-89640AEA3970}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>punto2</RootNamespace>
-    <AssemblyName>punto2</AssemblyName>
+    <RootNamespace>punto3</RootNamespace>
+    <AssemblyName>punto3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Libro1.cs" />
-	<Compile Include="Libro2.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs" />
+	  <Compile Include="Juegoarcade1.cs"/>
+	  <Compile Include="Juegoarcade2.cs"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

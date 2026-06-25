@@ -53,16 +53,23 @@ namespace punto2
             Autor = Console.ReadLine();
             Console.WriteLine("ingrese la cantidad de paginas del libro: ");
             linea = Console.ReadLine();
-            while (t)
+            if (int.Parse(linea) <10)
             {
-                Console.WriteLine("ingrese la cantidad de paginas del libro (tiene que ser mayor a 10): ");
-                linea = Console.ReadLine();
-                if (int.Parse(linea) > 10)
+                while (t)
                 {
-                    Paginas = int.Parse(linea);
-                    t = false;
+                    Console.WriteLine("ingrese la cantidad de paginas del libro (tiene que ser mayor a 10): ");
+                    linea = Console.ReadLine();
+                    if (int.Parse(linea) > 10)
+                    {
+                        Paginas = int.Parse(linea);
+                        t = false;
+                    }
                 }
+            }
+            else
+            {
+                Paginas=int.Parse(linea);
             }
         }
     }
-}
+}}

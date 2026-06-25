@@ -10,7 +10,7 @@ partial class Libro
 	public void Resumen()
 	{
 		Console.WriteLine("el libro es "+Titulo+"\n el autor es "+Autor);
-			if (Paginas => 100)
+			if (Paginas >= 100)
 			{
 				Console.Write("es un libro largo");
 			}

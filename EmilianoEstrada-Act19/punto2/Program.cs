@@ -16,7 +16,9 @@ namespace punto2
         si el libro es corto (menos de 100 páginas) o largo.
         Desde la clase principal, cargar 2 libros y mostrar cuál es el más extenso.*/
             Libro l = new Libro();
+            Libro y = new Libro();
             l.Resumen();
+            y.Resumen();
             Console.ReadKey();
         }
     }
