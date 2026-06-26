@@ -44,7 +44,7 @@ namespace punto1
             }
         }
         public Vuelo(){
-            
+            Console.WriteLine("ejecucion de vuelo");
         }
     }
     class Vuelointernacional : Vuelo 
@@ -63,6 +63,7 @@ namespace punto1
         }
         public Vuelointernacional(int n,string d,int dh,string p)
         {
+            Console.WriteLine("ejecucion de vuelo internacional");
             Paisdestino = p;
             Numerovuelo = n;
             Destino = d;
@@ -71,7 +72,8 @@ namespace punto1
         public void Lista()
         {
             List<Vuelointernacional> v = new List<Vuelointernacional>();
-            for (int i = 0; i < 3; i++)
+            int mayordura = 0, indice = 0;
+            for (int i = 0; i < 5; i++)
             {
                 string linea;
                 Console.WriteLine("ingrese el numero de vuelo: ");
@@ -82,6 +84,10 @@ namespace punto1
                 Console.WriteLine("ingrese la duracion en horas: ");
                 linea = Console.ReadLine();
                 int duracionhoras = int.Parse(linea);
+                if (mayordura < duracionhoras)
+                {
+                    mayordura = duracionhoras;
+                }
                 Console.WriteLine("ingrese el pais de destino: ");
                 string paisdestino = Console.ReadLine();
                 Vuelointernacional t = new Vuelointernacional(numerovuelo,destino,duracionhoras,paisdestino);
@@ -89,8 +95,14 @@ namespace punto1
             }
             foreach (Vuelointernacional u in v)
             {
+                indice++;
                 Console.WriteLine("numero de vuelo:"+u.Numerovuelo+" destino:"+u.Destino+" duracion horas:"+u.Duracionhoras+" pais destino:"+u.Paisdestino);
+                if (mayordura == u.Duracionhoras)
+                {
+                    Console.WriteLine("el vuelo "+u.Numerovuelo+" es el vuelo con mayor duracion con "+u.Duracionhoras);
+                }
             }
+            Console.WriteLine("");
         }
 
     }
@@ -107,7 +119,7 @@ namespace punto1
          Mostrar los vuelos registrados y el país de destino.
          Informar cuál es el vuelo con mayor duración.
          Mostrar el orden de ejecución de los constructores.*/
-            Vuelointernacional y=new Vuelointernacional(1,"h",2,"u");
+            Vuelointernacional y=new Vuelointernacional(0,"o",0,"o");
             y.Lista();
             Console.ReadKey();
         }

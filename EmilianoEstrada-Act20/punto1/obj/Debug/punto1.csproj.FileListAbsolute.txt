@@ -12,3 +12,10 @@ C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Deb
 C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.csproj.CoreCompileInputs.cache
 C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.exe
 C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.pdb
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\bin\Debug\punto1.exe.config
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\bin\Debug\punto1.exe
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\bin\Debug\punto1.pdb
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.csproj.AssemblyReference.cache
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.csproj.CoreCompileInputs.cache
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.exe
+C:\Users\alumno.ET26\source\repos\POO-actividades\EmilianoEstrada-Act20\punto1\obj\Debug\punto1.pdb
