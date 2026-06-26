@@ -87,6 +87,10 @@ namespace punto1
                 Vuelointernacional t = new Vuelointernacional(numerovuelo,destino,duracionhoras,paisdestino);
                 v.Add(t);
             }
+            foreach (Vuelointernacional u in v)
+            {
+                Console.WriteLine("numero de vuelo:"+u.Numerovuelo+" destino:"+u.Destino+" duracion horas:"+u.Duracionhoras+" pais destino:"+u.Paisdestino);
+            }
         }
 
     }
