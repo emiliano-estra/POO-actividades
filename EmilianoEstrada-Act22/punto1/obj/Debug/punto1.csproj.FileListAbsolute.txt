@@ -1,0 +1,2 @@
+C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act22\punto1\obj\Debug\punto1.csproj.AssemblyReference.cache
+C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act22\punto1\obj\Debug\punto1.csproj.CoreCompileInputs.cache
