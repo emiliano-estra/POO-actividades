@@ -14,10 +14,10 @@ namespace punto1
             string linea;
             Console.WriteLine("ingrese el nombre de la clase: ");
             nombreclase = Console.ReadLine();
-            Console.WriteLine("ingrese el año mes dia hora minuto que empiese la clase: ");
+            Console.WriteLine("ingrese el año mes dia hora minuto que empiese la clase(yyyy/MM/dd hh:mm): ");
             linea = Console.ReadLine();
             horainicio = DateTime.Parse(linea);
-            Console.WriteLine("ingrese el año mes dia hora minuto que termine la clase: ");
+            Console.WriteLine("ingrese el año mes dia hora minuto que termine la clase(yyyy/MM/dd hh:mm): ");
             linea = Console.ReadLine();
             horafin = DateTime.Parse(linea);
         }
@@ -29,8 +29,7 @@ namespace punto1
         }
         public TimeSpan Timpoclase()
         {
-            TimeSpan tipoclase = horainicio - horafin;
-            Console.WriteLine(" la calse dura "+tipoclase.Hours+":"+tipoclase.Minutes);
+            TimeSpan tipoclase = horafin - horainicio;
             return tipoclase;
         }
     }
@@ -46,18 +45,28 @@ namespace punto1
         1. La clase que tenga la mayor duración.
         2. El nombre y el horario de inicio de la clase más temprana.*/
             ClaseGimnasio[] t;
-            TimeSpan mayor;
+            t = new ClaseGimnasio[3];
+            TimeSpan mayor=new TimeSpan(0,0,0),duracion=new TimeSpan(0,0,0),menor=new TimeSpan(23,59,59);
+            int indiceme=0,indicema=0;
             for(int i=0; i<3; i++)
-            {
-                t = new ClaseGimnasio[3];
+            { 
                 t[i] = new ClaseGimnasio("rumba", "2026/07/08 08:05", "2026/07/08 10:05");
                 t[i]= new ClaseGimnasio();
-                
-                if (mayor< t[i].Timpoclase())
+                duracion = t[i].Timpoclase();
+                if (mayor< duracion)
                 {
-
+                    mayor = duracion;
+                    indicema = i;
+                }
+                if (menor > duracion)
+                {
+                    menor = duracion;
+                    indiceme = i;
                 }
             }
+            Console.WriteLine("la clase con mayor duracion es " + t[indicema].nombreclase);
+            Console.WriteLine("la clase que dura menos es la "+ t[indiceme].nombreclase+" su tiempo es de " + t[indiceme].horainicio);
+            Console.ReadKey();
            
         }
     }
