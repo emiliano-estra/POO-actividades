@@ -13,10 +13,20 @@ namespace punto5
         {
             public string nombre;
             public int numerodorsal;
-            public TimeSpan timepototal;
-            public Corredor(string nombre, int numerodorsal, int hora, int minutos)
+            public TimeSpan tiempototal;
+            public Corredor(string nombre, int numerodorsal)
             {
+                this.nombre = nombre;
+                this.numerodorsal = numerodorsal;
+            }
+            public void RegistrarTiempo(int minutos)
+            {
+                tiempototal = new TimeSpan(0, minutos, 0);
+            }
 
+            public void RegistrarTiempo(int horas, int minutos)
+            {
+                tiempototal = new TimeSpan(horas, minutos, 0);
             }
         }
         class Carrera
@@ -25,39 +35,49 @@ namespace punto5
             public int numerodorsal,hora,minutos;
             public DateTime horainicio, horafin;
             public List<Corredor> cor = new List<Corredor>();
-            public Corredor[] par;
+            public Corredor c;
             public Carrera(){
                 string linea;
-                par=new Corredor[6];
                 Console.WriteLine("ingrese el codigo de la carrera: ");
                 codigo = Console.ReadLine();
                 Console.WriteLine("ingrese la hora de inicio de la carrera(yyyy/MM/dd hh:mm): ");
                 horainicio=DateTime.Parse(Console.ReadLine());
                 Console.WriteLine("ingrese la hora de fin de la carrera(yyyy/MM/dd hh:mm): ");
                 horafin = DateTime.Parse(Console.ReadLine());
-                for(int i = 0; i < 6; i++)
+                for(int i = 0; i < 2; i++)
                 {
                     Console.WriteLine("ingrese el nombre del corredor: ");
                     nombre = Console.ReadLine();
                     Console.WriteLine("ingrese el numero del dorsal del corredor");
                     linea = Console.ReadLine();
-                    numerodorsal = int.Parse(Console.ReadLine());
+                    numerodorsal = int.Parse(linea);
                     Console.WriteLine("ingrese cuantas horas tiene de tiempo: ");
                     linea = Console.ReadLine();
-                    hora = int.Parse(Console.ReadLine());
+                    hora = int.Parse(linea);
                     Console.WriteLine("ingrese cuantos minutos tiene de tiempo: ");
                     linea = Console.ReadLine();
-                    minutos = int.Parse(Console.ReadLine());
-                    par[i] = new Corredor(nombre,numerodorsal,hora,minutos);
+                    minutos = int.Parse(linea);
+                    c = new Corredor(nombre, numerodorsal);
+                    if(hora == 0)
+                    {
+                        c.RegistrarTiempo(minutos);
+                    }
+                    else
+                    {
+                        c.RegistrarTiempo(hora, minutos);
+                    }
+                        
+                    cor.Add(c);
                 }
             }
-            public Carrera(Corredor)
+            public Carrera(Corredor ter)
             {
-                cor.Add();
+                cor.Add(ter);
             }
-            public void Duracion()
+            public TimeSpan Duracion()
             {
                 TimeSpan duracion = horafin - horainicio;
+                return duracion;
             }
         }
         static void Main(string[] args)
@@ -79,6 +99,52 @@ namespace punto5
         o El corredor más rápido.
         4. Utilizar this en los constructores o métodos donde corresponda.
             5. Deben ser 4 carreras.*/
+            Carrera[] carreras = new Carrera[2];
+            TimeSpan mayor;
+            Corredor rapido;
+            int indice = 0;
+            for (int i = 0; i < 2; i++)
+            {
+                carreras[i] = new Carrera();
+            }
+            mayor = carreras[0].Duracion();
+            rapido = carreras[0].cor[0];
+            for (int i = 0; i < 2; i++) { 
+                foreach (Corredor c in carreras[i].cor)
+                {
+                    if (rapido.tiempototal > c.tiempototal)
+                    {
+                        rapido = c;
+                    }
+                }
+                if (mayor < carreras[i].Duracion())
+                {
+                    mayor = carreras[i].Duracion();
+                    indice = i;
+                }   
+            }
+            Console.Clear();
+
+            Console.SetCursorPosition(5, 2);
+            Console.WriteLine("Carrera con mayor duración");
+
+            Console.SetCursorPosition(5, 3);
+            Console.WriteLine("Código: " + carreras[indice].codigo);
+
+            Console.SetCursorPosition(5, 4);
+            Console.WriteLine("Duración: " + mayor);
+
+            Console.SetCursorPosition(5, 7);
+            Console.WriteLine("Corredor más rápido");
+
+            Console.SetCursorPosition(5, 8);
+            Console.WriteLine("Nombre: " + rapido.nombre);
+
+            Console.SetCursorPosition(5, 9);
+            Console.WriteLine("Dorsal: " + rapido.numerodorsal);
+
+            Console.SetCursorPosition(5, 10);
+            Console.WriteLine("Tiempo: " + rapido.tiempototal);
             Console.ReadKey();
 
         }
