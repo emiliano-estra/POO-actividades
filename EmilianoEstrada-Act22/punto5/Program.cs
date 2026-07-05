@@ -44,7 +44,7 @@ namespace punto5
                 horainicio=DateTime.Parse(Console.ReadLine());
                 Console.WriteLine("ingrese la hora de fin de la carrera(yyyy/MM/dd hh:mm): ");
                 horafin = DateTime.Parse(Console.ReadLine());
-                for(int i = 0; i < 2; i++)
+                for(int i = 0; i < 6; i++)
                 {
                     Console.WriteLine("ingrese el nombre del corredor: ");
                     nombre = Console.ReadLine();
@@ -99,17 +99,17 @@ namespace punto5
         o El corredor más rápido.
         4. Utilizar this en los constructores o métodos donde corresponda.
             5. Deben ser 4 carreras.*/
-            Carrera[] carreras = new Carrera[2];
+            Carrera[] carreras = new Carrera[4];
             TimeSpan mayor;
             Corredor rapido;
             int indice = 0;
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 4; i++)
             {
                 carreras[i] = new Carrera();
             }
             mayor = carreras[0].Duracion();
             rapido = carreras[0].cor[0];
-            for (int i = 0; i < 2; i++) { 
+            for (int i = 0; i < 4; i++) { 
                 foreach (Corredor c in carreras[i].cor)
                 {
                     if (rapido.tiempototal > c.tiempototal)
