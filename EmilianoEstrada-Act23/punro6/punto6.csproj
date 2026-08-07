@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7BCB023F-C857-4E21-B2A7-42FDFBDA44EE}</ProjectGuid>
+    <ProjectGuid>{4AFC7E01-774E-4DC1-87DC-9CF9D2C101F1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>punto2</RootNamespace>
-    <AssemblyName>punto2</AssemblyName>
+    <RootNamespace>punro6</RootNamespace>
+    <AssemblyName>punro6</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
