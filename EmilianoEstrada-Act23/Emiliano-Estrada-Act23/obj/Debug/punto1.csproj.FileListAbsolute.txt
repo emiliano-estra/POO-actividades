@@ -1,7 +1,0 @@
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\obj\Debug\punto1.csproj.AssemblyReference.cache
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\obj\Debug\punto1.csproj.CoreCompileInputs.cache
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\bin\Debug\Emiliano-Estrada-Act23.exe.config
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\bin\Debug\Emiliano-Estrada-Act23.exe
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\bin\Debug\Emiliano-Estrada-Act23.pdb
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\obj\Debug\Emiliano-Estrada-Act23.exe
-C:\Users\alumno.ET26\source\repos\EmilianoEstrada-Act23\Emiliano-Estrada-Act23\obj\Debug\Emiliano-Estrada-Act23.pdb
