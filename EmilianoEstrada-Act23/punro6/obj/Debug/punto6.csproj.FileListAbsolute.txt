@@ -1,0 +1,7 @@
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\bin\Debug\punro6.exe.config
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\bin\Debug\punro6.exe
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\bin\Debug\punro6.pdb
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\obj\Debug\punto6.csproj.AssemblyReference.cache
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\obj\Debug\punto6.csproj.CoreCompileInputs.cache
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\obj\Debug\punro6.exe
+C:\Users\laugt\source\repos\POO-actividades\EmilianoEstrada-Act23\punro6\obj\Debug\punro6.pdb

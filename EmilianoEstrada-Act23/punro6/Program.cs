@@ -61,7 +61,43 @@ namespace punto6
                     linea= Console.ReadLine();
                     año=int.Parse(linea);
                     Libro t = new Libro(titulo,año);
+                    l.Add(t);
                 }
+            }
+        }
+        public void Listarcatalogo()
+        {
+            foreach (Libro t in l)
+            {
+                Console.WriteLine("Titulo: " + t.Titulo + " Año de publicacion: " + t.Aniopublicacion);
+            }
+            Console.WriteLine("Cantidad total de obras registradas: " + l.Count);
+        }
+        public void Filtrarporanio()
+        {
+            Console.WriteLine("Ingrese un año : ");
+            int año = int.Parse(Console.ReadLine());
+            foreach (Libro t in l)
+            {
+                if (t.Aniopublicacion < año)
+                {
+                    Console.WriteLine("Titulo: " + t.Titulo + " Año de publicacion: " + t.Aniopublicacion);
+                }
+            }
+        }
+        public void Removerlibro()
+        {
+            Console.WriteLine("Ingrese el titulo del libro a eliminar: ");
+            string titulo = Console.ReadLine();
+            Libro libroAEliminar = l.FirstOrDefault(libro => libro.Titulo == titulo);
+            if (libroAEliminar != null)
+            {
+                l.Remove(libroAEliminar);
+                Console.WriteLine("Libro eliminado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró un libro con ese título.");
             }
         }
     }
@@ -88,6 +124,12 @@ namespace punto6
         4. RemoverLibro(): Pedir al usuario el título de un libro y, utilizando
         los métodos de búsqueda y remoción de listas, eliminarlo de la
         colección si se encuentra presente.*/
+            Bibliotecacentral b = new Bibliotecacentral();
+            b.Cargarcatalogo();
+            b.Listarcatalogo();
+            b.Filtrarporanio();
+            b.Removerlibro();
+            Console.ReadKey();
         }
     }
 }
