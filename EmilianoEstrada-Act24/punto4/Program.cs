@@ -24,14 +24,23 @@ namespace punto4
                 return horasestadia;
             }
         }
-        public Ticket(string patente,int hora) { 
-            this.patente=patente;
+        public Ticket(string patente, int hora)
+        {
+            this.patente = patente;
             horasestadia = hora;
         }
     }
     class Gestionestacionamiento
     {
         List<Ticket> t = new List<Ticket>();
+        public int cantidadautos;
+        public Gestionestacionamiento()
+        {
+            string linea;
+            Console.WriteLine("ingrese cuantos autos quiere ingresar: ");
+            linea = Console.ReadLine();
+            cantidadautos=int.Parse(linea);
+        }
         public void Registraringreso()
         {
             string linea, patente;
@@ -46,8 +55,9 @@ namespace punto4
         }
         public void Procesarsalida()
         {
-            if (t.Count > 0) {
-                Console.WriteLine("la patente del coche que quiere salir es " + t[0].Patente+" con " + t[0].Horasestadia+" horas de estadia");
+            if (t.Count > 0)
+            {
+                Console.WriteLine("la patente del coche que quiere salir es " + t[0].Patente + " con " + t[0].Horasestadia + " horas de estadia");
                 t.RemoveAt(0);
             }
             else
@@ -60,9 +70,9 @@ namespace punto4
             Console.WriteLine("lista de vehiculos: ");
             foreach (Ticket h in t)
             {
-                Console.WriteLine(h.Patente+" hora de estadia "+h.Horasestadia);
+                Console.WriteLine(h.Patente + " hora de estadia " + h.Horasestadia);
             }
-            Console.WriteLine("hay "+t.Count+" vehiculos en el estacionamiento");
+            Console.WriteLine("hay " + t.Count + " vehiculos en el estacionamiento");
         }
     }
     internal class Program
@@ -85,10 +95,11 @@ namespace punto4
         o MostrarVehiculosEstacionados(): Listar todos los vehículos
         alojados en la playa y la cantidad total de unidades presentes
         utilizando la propiedad .Count.*/
-            Gestionestacionamiento j=new Gestionestacionamiento();
-            j.Registraringreso();
-            j.Registraringreso();
-            j.Registraringreso();
+            Gestionestacionamiento j = new Gestionestacionamiento();
+            for(int i = 0; i < j.cantidadautos; i++)
+            {
+                j.Registraringreso();
+            }
             j.Procesarsalida();
             j.Mostrarvehiculosestacionados();
             Console.ReadKey();

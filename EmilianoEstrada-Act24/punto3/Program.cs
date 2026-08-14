@@ -12,6 +12,10 @@ namespace punto3
         private double calificacion;
         public string Nombrecompleto
         {
+            set
+            {
+                nombrecompleto = value;
+            }
             get
             {
                 return nombrecompleto;
@@ -19,14 +23,18 @@ namespace punto3
         }
         public double Calificacion
         {
+            set
+            {
+                calificacion = value;
+            }
             get
             {
                 return calificacion;
             }
         }
         public Estudiante(string nombre,double calificacion) {
-            nombrecompleto = nombre;
-            this.calificacion = calificacion;
+            Nombrecompleto = nombre;
+            Calificacion = calificacion;
         }
     }
     class Gestionacademica
