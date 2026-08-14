@@ -12,10 +12,6 @@ namespace punto6
         private int aniopublicacion;
         public string Titulo
         {
-            set
-            {
-                titulo = value;
-            }
             get
             {
                 return titulo;
@@ -23,18 +19,15 @@ namespace punto6
         }
         public int Aniopublicacion
         {
-            set
-            {
-                aniopublicacion = value;
-            }
+           
             get
             {
                 return aniopublicacion;
             }
         }
         public Libro(string titulo,int anio) { 
-        Titulo = titulo;
-        Aniopublicacion = anio;
+        this.titulo = titulo;
+        aniopublicacion = anio;
         }
     }
     class Bibliotecacentral
