@@ -12,10 +12,6 @@ namespace punto4
         private int horasestadia;
         public string Patente
         {
-            set
-            {
-                patente=value;
-            }
             get
             {
                 return patente;
@@ -23,18 +19,14 @@ namespace punto4
         }
         public int Horasestadia
         {
-            set
-            {
-                horasestadia=value;
-            }
             get
             {
                 return horasestadia;
             }
         }
         public Ticket(string patente,int hora) { 
-            Patente=patente;
-            Horasestadia = hora;
+            this.patente=patente;
+            horasestadia = hora;
         }
     }
     class Gestionestacionamiento
